@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-container {
+  display: flex;
+  align-items: flex-end;
+  height: 80vh;
+  padding: 20px;
+}
+
+.leaf {
+  width: 20px;
+  background-color: #2ecc71;
+  transform: rotate(-45deg);
+  bottom: 70px;
+  position: absolute;
+}
+
+
+.plant {
+  width: 10px;
+  background-color: hsl(145, 63%, 35%); 
+  bottom: 100px;
+  left: 45px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.leaf-container {
+  left: 45px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.pot {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #d2b48c; /* Brown color for the pot */
+  border-radius: 10px; /* Rounded corners for the pot */
+}
+
+.pot::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background-color: #8b4513;
+  bottom: 0;
+  left: 0px;
+  border-radius: 0 0 8px 8px;
+}
