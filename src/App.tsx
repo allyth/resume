@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState, useRef } from 'react';
 import Resume from './Resume';
-import Leaf from './features/skills/Leaf.component';
 
 export const App = () => {
     return (

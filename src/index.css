@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: antiquewhite;
+  background-color: rgb(183, 130, 62);
+  max-height: 100vh;
 }
 
 code {
@@ -21,44 +22,72 @@ code {
 }
 
 .leaf {
-  width: 20px;
+  /* margin-left: 50px; */
+  width: 70px;
   background-color: #2ecc71;
   transform: rotate(-45deg);
   bottom: 70px;
   position: absolute;
+  border-radius: 0 100%;
+  background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
 }
 
 
 .plant {
   width: 10px;
-  background-color: hsl(145, 63%, 35%); 
-  bottom: 100px;
+  /* height: 75vh; */
+  background-image: linear-gradient(to right, hsl(98, 82%, 60%), rgb(51, 139, 147));
   left: 45px;
   border-radius: 5px;
   position: relative;
 }
 
 .leaf-container {
-  left: 45px;
+  /* left: 200px; */
   border-radius: 5px;
+  position: absolute;
+  max-height:75vh;
+  /* height: 100vh; */
+}
+
+/* .rowStyle {
+  height: '100%';
+  display: flex;
+  align-items: flex-end;
+} */
+
+/* .containerStyle {
+  min-height: '100vh';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.pot-container {
+  min-height:75vh;
   position: relative;
+}
+
+.plant-container {
+  height: 75vh;
+  /* width: 100vh; */
+  position: relative;
+  /* align-self: flex-end; */
 }
 
 .pot {
-  position: relative;
   width: 100px;
   height: 100px;
-  background-color: #d2b48c; /* Brown color for the pot */
-  border-radius: 10px; /* Rounded corners for the pot */
+  border-radius: 10px; 
+  background-image: linear-gradient(to right, #9c8568, #5a4d3b);
 }
 
-.pot::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 10px;
-  background-color: #8b4513;
-  bottom: 0;
-  left: 0px;
-  border-radius: 0 0 8px 8px;
+.footer {
+  position:fixed;
+  margin-top: auto;
+  padding: 20px;
+  background-color: #333;
+  color: rgb(155, 69, 69);
+  text-align: center;
 }
+
